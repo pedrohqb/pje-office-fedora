@@ -9,7 +9,6 @@ BuildArch:      x86_64
 BuildRequires:  unzip
 BuildRequires:  desktop-file-utils
 Requires:       bash, zulu-11
-# O usuário pode precisar garantir que o repositório da Azul esteja habilitado e que 'zulu-11' seja o nome correto do pacote.
 
 %description
 PJeOffice é um software disponibilizado pelo CNJ (Conselho Nacional de Justiça)
@@ -112,7 +111,7 @@ ln -sf /usr/share/pjeoffice-pro/pjeoffice-pro.sh %{buildroot}/usr/bin/pjeoffice-
 %files
 # Nenhum arquivo de licença ou documentação é empacotado.
 
-# Arquivos principais da aplicação, agora dependendo de um Java fornecido pelo sistema, e não de um JRE empacotado.
+# Arquivos principais da aplicação.
 /usr/share/pjeoffice-pro/
 
 # Arquivos de integração com o ambiente de área de trabalho.
