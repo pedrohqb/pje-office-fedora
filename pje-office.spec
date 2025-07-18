@@ -41,8 +41,7 @@ cat > pjeoffice-pro.sh << EOF
 echo "Iniciando o PJeOffice!"
 
 # Executa o JAR do PJeOffice usando o Zulu.
-export PATH="/usr/lib/jvm/zulu-11/bin"
-exec java \
+exec /usr/lib/jvm/zulu-11/bin/java \
 -XX:+UseG1GC \
 -XX:MinHeapFreeRatio=3 \
 -XX:MaxHeapFreeRatio=3 \
