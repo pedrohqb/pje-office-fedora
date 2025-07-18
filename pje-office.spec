@@ -1,6 +1,6 @@
 Name:           pje-office
 Version:        2.5.16u
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        PJeOffice é um software disponibilizado pelo CNJ para assinatura eletrônica de documentos no sistema PJe
 License:        Custom
 URL:            https://pjeoffice.trf3.jus.br
@@ -77,7 +77,7 @@ unzip -p pjeoffice-pro.jar images/pje-icon-pje-feather.png > pjeoffice.png
 mkdir -p %{buildroot}/usr/share/pjeoffice-pro/
 mkdir -p %{buildroot}/usr/share/applications/
 mkdir -p %{buildroot}/usr/bin/
-mkdir -p %{buildroot}/usr/share/icons/
+mkdir -p %{buildroot}/usr/share/icons/hicolor/512x512/apps
 
 # Altera para o diretório de construção contendo arquivos preparados e gerados.
 cd %{_builddir}/pje-office-%{version}/pjeoffice-pro
@@ -98,7 +98,7 @@ cp pje-office.desktop %{buildroot}/usr/share/applications/pje-office.desktop
 cp pjeoffice-pro.sh %{buildroot}/usr/share/pjeoffice-pro/pjeoffice-pro.sh
 
 # Copia o ícone para o diretório padrão de ícones.
-cp pjeoffice.png %{buildroot}/usr/share/icons/pjeoffice.png
+cp pjeoffice.png %{buildroot}/usr/share/icons/hicolor/512x512/apps/pjeoffice.png
 
 # Torna o script de inicialização executável.
 chmod 755 %{buildroot}/usr/share/pjeoffice-pro/pjeoffice-pro.sh
@@ -117,4 +117,4 @@ ln -sf /usr/share/pjeoffice-pro/pjeoffice-pro.sh %{buildroot}/usr/bin/pjeoffice-
 /usr/bin/pjeoffice-pro
 
 # Ícone da aplicação.
-/usr/share/icons/pjeoffice.png
+/usr/share/icons/hicolor/512x512/apps/pjeoffice.png
