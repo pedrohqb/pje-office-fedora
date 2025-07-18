@@ -1,6 +1,6 @@
 Name:           pje-office
 Version:        2.5.16u
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        PJeOffice é um software disponibilizado pelo CNJ para assinatura eletrônica de documentos no sistema PJe
 License:        Custom
 URL:            https://pjeoffice.trf3.jus.br
